@@ -1,0 +1,143 @@
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Optima", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #475B63;
+	background-color: #E0D0C1;
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: #475B63;
+	margin-bottom: 1rem;
+}
+
+#newtask {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#newinput {
+	flex: 1 1 0%;
+	background-color: #A76D60;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: #2a0f11;
+	font-size: 1.25rem;
+}
+
+#newinput::placeholder {
+	color: #212b2f;
+}
+
+#newsubmit {
+	color: #2E294E;
+	font-size: 1.25rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#newsubmit:hover {
+	opacity: 0.8;
+}
+
+#newsubmit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.T_list {
+	padding: 1rem;
+}
+
+.T_list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #2c3134;
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: #A76D60;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: #2a0f11;
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+/* OOoo color change magic */
+.task .content .text:not(:read-only) {
+	color:pink;
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+    color: rgb(10, 20, 10); 
+	
+}
+
+.task .actions .delete {
+	color: #601700;
+} 
